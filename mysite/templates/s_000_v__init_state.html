@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Questions and Answers for Human Resources Survey</h2>
+    <h3><a href="/goto_state?event_code=v_10">Let's start</a></h3>
+    {% for hrq in hrq_data %}
+        {% if hrq != 'Q_00'  %}
+            <div><p>Q:[{{ hrq_data[hrq]['q_text'] }}]</p></div>
+                {% for answer in hrq_data[hrq]['answers'] %}
+                    <div><p>---> answer:[{{ hrq_data[hrq]['answers'][answer]['a_text'] }}]</p></div>
+                {% endfor %}
+        {% endif %}
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Question:[{{hrq_data[question_code]['q_text']}}] --> code:[{{question_code}}]</h2>
+    <form action="/goto_state?event_code=v_10" method="post">
+        <input type="hidden" name = "current_question_code" value = "{{question_code}}">
+        <hr>
+        {% for answer in hrq_data[question_code]['answers'] %}
+            <input type="radio" name="answer_code" value="{{answer}}">[{{hrq_data[question_code]['answers'][answer]['a_text']}}]<br>
+        {% endfor %}
+        <hr>
+        {% if error %}
+            error:[{{error}}]
+            <hr>
+        {% endif %}
+        <input type="submit">
+    </form>
+{% endblock %}
