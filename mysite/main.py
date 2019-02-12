@@ -49,8 +49,8 @@ def goto_state():
     if state_next == 's_040_v__agreement':
         return render_template('/s_040_v__agreement.html', title='s_040_v__agreement')
 
-#s_050__start_questions
-    if state_next == 's_050__start_questions':
+#s_050__start_questionnaire
+    if state_next == 's_050__start_questionnaire':
         sql = dbclasses.SQLighter()
         sql.create_table('answer_01')
 
@@ -103,6 +103,10 @@ def goto_state():
         percentage_of_correct_answers = (question_with_correct_answer/question_all)*100
 
         return render_template('s_070_v__show_result.html', title='s_070_v__show_result', percentage_of_correct_answers = percentage_of_correct_answers)
+
+#s_800_v__quit_questionnaire
+    if state_next == 's_800_v__quit_questionnaire':
+        return render_template('/s_800_v__quit_questionnaire.html', title='s_800_v__quit_questionnaire')
 
 
 
