@@ -2,7 +2,7 @@ import MySQLdb
 
 class SQLighter:
     def __init__(self):
-        self.conn  = MySQLdb.connect("evaclickfsm.mysql.pythonanywhere-services.com","evaclickfsm","BDclick!2408","evaclickfsm$default",charset = "utf8", use_unicode = True)
+        self.conn  = MySQLdb.connect("ericweget.mysql.pythonanywhere-services.com","ericweget","BDclick!2408","ericweget$default",charset = "utf8", use_unicode = True)
         self.c = self.conn.cursor()
 
     def getLastRow(self, table_name):

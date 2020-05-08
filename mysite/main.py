@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'you-will-never-guess'
 
 import sys
-sys.path.append('/home/evaclickfsm/classes')
+sys.path.append('/home/ericweget/classes')
 
 import hrqclasses
 import dbclasses
@@ -19,7 +19,7 @@ def index():
     fsm = fsmclasses.HrqFsm()
     fsm.setStateLogTable(sql)
 
-    return redirect('http://evaclickfsm.pythonanywhere.com/goto_state?event_code=v_00')
+    return redirect('http://ericweget.pythonanywhere.com/goto_state?event_code=v_00')
 
 @app.route('/goto_state', methods=['GET', 'POST'])
 def goto_state():
@@ -54,11 +54,11 @@ def goto_state():
         sql = dbclasses.SQLighter()
         sql.create_table('answer_01')
 
-        return redirect('http://evaclickfsm.pythonanywhere.com/goto_state?event_code=v_10&question_code=Q_00')
+        return redirect('http://ericweget.pythonanywhere.com/goto_state?event_code=v_10&question_code=Q_00')
 
 #s_060_v__questions
     if state_next == 's_060_v__questions':
-        full_name = '/home/evaclickfsm/data/hrq.json'
+        full_name = '/home/ericweget/data/hrq.json'
         hrq = hrqclasses.HrqDataFromFile(json, full_name)
         hrq_data = hrq.getAll()
         question_code = request.args.get('question_code')
@@ -84,7 +84,7 @@ def goto_state():
 
 #s_070_v__show_result
     if state_next == 's_070_v__show_result':
-        full_name = '/home/evaclickfsm/data/hrq.json'
+        full_name = '/home/ericweget/data/hrq.json'
         hrq = hrqclasses.HrqDataFromFile(json, full_name)
         hrq_data = hrq.getAll()
 
