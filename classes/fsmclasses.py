@@ -4,7 +4,7 @@ class HrqFsm:
 
     def __init__(self):
         self.state_log_table_name = 'state_log'
-        self.state_matrix_file_full_path = '/home/evaclickfsm/data/state_matrix.json'
+        self.state_matrix_file_full_path = '/home/ericweget/data/state_matrix.json'
 
     def setStateLogTable(self, sql):
         sql.createStateLogTable(self.state_log_table_name)
