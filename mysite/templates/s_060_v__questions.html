@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Question:[{{hrq_data[question_code]['q_text']}}] --> code:[{{question_code}}]</h2>
+    <h2>Question:[{{hrq_data[question_code]['q_text']}}]<!-- -> code:[{{question_code}}] --></h2>
     <form action="/goto_state?event_code=v_10" method="post">
         <input type="hidden" name = "current_question_code" value = "{{question_code}}">
         <hr>

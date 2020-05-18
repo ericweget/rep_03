@@ -100,7 +100,7 @@ def goto_state():
                 if hrq_data[question_code]['answers'][answer_code]['is_right'] == 'true':
                     question_with_correct_answer += 1
 
-        percentage_of_correct_answers = (question_with_correct_answer/question_all)*100
+        percentage_of_correct_answers = int((question_with_correct_answer/question_all)*100)
 
         return render_template('s_070_v__show_result.html', title='s_070_v__show_result', percentage_of_correct_answers = percentage_of_correct_answers)
 

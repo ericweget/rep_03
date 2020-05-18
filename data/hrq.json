@@ -7,25 +7,25 @@
                 }
             },
     "Q_10":{
-            "q_text":"Question Q_10", "next_one":"Q_20",
+            "q_text":"Is lapiz lazul equal the rarity of diamonds?", "next_one":"Q_20",
             "answers":{
-                "A_10_10":{"a_text":"Answer A_10_10" ,"is_right":"false"},
-                "A_10_20":{"a_text":"Answer A_10_20" ,"is_right":"true"}
+                "A_10_10":{"a_text":"Yes" ,"is_right":"false"},
+                "A_10_20":{"a_text":"No" ,"is_right":"true"}
                 }
             },
     "Q_20":{
-            "q_text":"Question Q_20", "next_one":"Q_30",
+            "q_text":"What is better in 1.16?", "next_one":"Q_30",
             "answers":{
-                "A_20_10":{"a_text":"Answer A_20_10" ,"is_right":"false"},
-                "A_20_20":{"a_text":"Answer A_20_20" ,"is_right":"true"},
-                "A_20_30":{"a_text":"Answer A_20_30" ,"is_right":"false"}
+                "A_20_10":{"a_text":"Netherite" ,"is_right":"true"},
+                "A_20_20":{"a_text":"Diamond" ,"is_right":"false"},
+                "A_20_30":{"a_text":"Emerald" ,"is_right":"false"}
                 }
             },
     "Q_30":{
-            "q_text":"Question Q_30", "next_one":"Q_LAST_ONE",
+            "q_text":"is herobrine real in 1.15?", "next_one":"Q_LAST_ONE",
             "answers":{
-                "A_30_10":{"a_text":"Answer A_30_10" ,"is_right":"true"},
-                "A_30_20":{"a_text":"Answer A_30_20" ,"is_right":"false"}
+                "A_30_10":{"a_text":"No" ,"is_right":"true"},
+                "A_30_20":{"a_text":"Yes" ,"is_right":"false"}
                 }
             }
 }
