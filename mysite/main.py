@@ -48,7 +48,9 @@ def goto_state():
 #s_040_v__agreement
     if state_next == 's_040_v__agreement':
         return render_template('/s_040_v__agreement.html', title='s_040_v__agreement')
-
+#s_045_v__are_you_sure
+    if state_next == 's_045_v__are_you_sure':
+        return render_template('/s_045_v__are_you_sure.html', title='s_045_v__are_you_sure')
 #s_050__start_questionnaire
     if state_next == 's_050__start_questionnaire':
         sql = dbclasses.SQLighter()
