@@ -12,4 +12,4 @@ class HrqDataFromFile:
 
     def getNextQuestionCode(self, question_code):
 
-        return self.hrq_data_from_file[question_code]['next_one']
+        return self.hrq_data_from_file[question_code]['next_one']  
