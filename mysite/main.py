@@ -4,6 +4,7 @@ from flask import render_template, flash, redirect
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'you-will-never-guess'
 
+
 import sys
 sys.path.append('/home/ericweget/classes')
 
